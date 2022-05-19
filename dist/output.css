@@ -468,6 +468,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-48 {
   margin-bottom: 12rem;
 }
@@ -532,12 +537,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 4rem;
 }
 
-.gap-24 {
-  gap: 6rem;
-}
-
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-24 {
+  gap: 6rem;
 }
 
 .rounded-\[2rem\] {
@@ -563,6 +568,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./images/bg-header-desktop.png');
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -576,6 +589,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pb-4 {
@@ -741,13 +759,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (min-width: 939px) {
+@media (min-width: 1024px) {
+  .lg\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .lg\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .lg\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
 
   .lg\:grid {
     display: grid;
+  }
+
+  .lg\:max-w-6xl {
+    max-width: 72rem;
+  }
+
+  .lg\:max-w-4xl {
+    max-width: 56rem;
+  }
+
+  .lg\:max-w-7xl {
+    max-width: 80rem;
   }
 
   .lg\:grid-cols-3 {
@@ -785,6 +828,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:pt-0 {
     padding-top: 0px;
   }
+
+  .lg\:text-left {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -794,5 +841,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:p-0 {
     padding: 0px;
+  }
+
+  .xl\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .xl\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .xl\:text-left {
+    text-align: left;
   }
 }
