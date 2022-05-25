@@ -513,6 +513,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -591,11 +595,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -630,6 +629,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -686,13 +689,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:bg-\[\#26BAA4\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 186 164 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#8ef4e5\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(142 244 229 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#74f0dd\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(116 240 221 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#76efdd\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(118 239 221 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#6173FF\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 115 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#97a2f6\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(151 162 246 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#26BAA4\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(38 186 164 / var(--tw-text-opacity));
+}
+
 @media (min-width: 360px) {
   .sm\:grid {
     display: grid;
-  }
-
-  .sm\:h-auto {
-    height: auto;
   }
 
   .sm\:grid-cols-1 {
@@ -765,6 +799,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 0px;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -825,12 +863,27 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 15rem;
   }
 
+  .lg\:px-\[6rem\] {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .lg\:px-\[rem\] {
+    padding-left: rem;
+    padding-right: rem;
+  }
+
+  .lg\:px-\[4rem\] {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
 
-  .lg\:text-left {
-    text-align: left;
+  .lg\:pb-0 {
+    padding-bottom: 0px;
   }
 }
 
@@ -841,10 +894,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:p-0 {
     padding: 0px;
-  }
-
-  .xl\:pt-8 {
-    padding-top: 2rem;
   }
 
   .xl\:pt-12 {
